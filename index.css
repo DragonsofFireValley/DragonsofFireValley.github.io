@@ -112,16 +112,18 @@ iframe{
 
 .announce img
 {
-	height: 4rem;
-	width: 4rem;
-	border-radius: 2rem;
+	height: 4em;
+	width: 4em;
+	max-width: 256px;
+	max-height: 256px;
+	border-radius: 2em;
 	object-fit: cover;
-	border: solid 0.2rem var(--dfv-red-m2);
+	border: solid 0.2em var(--dfv-red-m2);
 }
 
 .announce-dates
 {
-	margin-top: 1rem;
+	margin-top: 1em;
 }
 
 .announce-dates .col:nth-child(even)
