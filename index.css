@@ -87,6 +87,7 @@ body, .nogap{
 }
 
 
+
 .navbar{
 	position: sticky;
 	top: 0;
@@ -102,6 +103,28 @@ iframe{
 	width: 100%;
 }
 
-iframe #document body{
-	background-color: #00ff00 !important;
+.announce:nth-child(odd)
+{
+	background-color: var(--bs-tertiary-bg);
+	border-radius: var(--bs-border-radius);
+	overflow: hidden;
+}
+
+.announce img
+{
+	height: 4rem;
+	width: 4rem;
+	border-radius: 2rem;
+	object-fit: cover;
+	border: solid 0.2rem var(--dfv-red-m2);
+}
+
+.announce-dates
+{
+	margin-top: 1rem;
+}
+
+.announce-dates .col:nth-child(even)
+{
+	background-color: var(--bs-secondary-bg);
 }
