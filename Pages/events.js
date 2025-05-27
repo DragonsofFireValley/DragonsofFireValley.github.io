@@ -1,5 +1,34 @@
 "use strict";
-function getEvents(url, outputid)
+function showEvents(jsonstring)
+{
+	console.log(jsonstring);
+	if (typeof(jsonstring) == typeof([]))
+	{
+		jsonstring.forEach(event => {
+			document.getElementById("events-body").innerHTML += `
+				<tr>
+					<td>${event["startDate"]}<br></td>
+					<td class="h3">${event["eventName"]}</td>
+					<td>${event["about"]}</td>
+					<td>${event["location"]}</td>
+				</tr>
+			`;
+		});
+	}
+	else
+	{
+		document.getElementById("events-body").innerHTML = `
+			<tr>
+				<td>${jsonstring["startDate"]}<br></td>
+				<td class="h3">${jsonstring["eventName"]}</td>
+				<td>${jsonstring["about"]}</td>
+				<td>${jsonstring["location"]}</td>
+			</tr>
+		`
+	}
+}
+
+function getEvents(url)
 {
 	fetch(url)
 		.then((response) => {
@@ -10,24 +39,11 @@ function getEvents(url, outputid)
 		})
 		.then((text) => {
 			// Output Goes Here
-			console.log(JSON.parse("[{'name':'Cool Event'}]"))
+			showEvents(JSON.parse(text))
 		})
 		.catch((error) => {
-			alert(error);
+			console.error(error);
 		});
 }
 
-function showEvents(jsonstring)
-{
-	console.log(jsonstring);
-	document.getElementById("events-body").innerHTML = `
-		<tr>
-			<td>Mar 20 2025 <br /> Mar 23 2025</td>
-			<td class="h3"><abbr title="Northern Lights Coronation Campout">NLCC</abbr> 2025</td>
-			<td>NLCC is a Kingdom event hosted for the transferring of the crown, where the Monarch, Regent, and Champion seats of the kingdom are transferred to new occupants.</td>
-			<td><a href="https://maps.app.goo.gl/gqZFre39NXt74iv16" target="_blank">Panhandle Lake 4-H Camp <br /> 370 W Panhandle Lake Rd, Shelton, WA 98584</a></td>
-		</tr>
-	`
-}
-
-showEvents(JSON.parse(`[{"name":"Cool Event"}]`));
+getEvents("https://raw.githubusercontent.com/DragonsofFireValley/DragonsofFireValley.github.io/refs/heads/development/EventsSource/EventsSouce.json")

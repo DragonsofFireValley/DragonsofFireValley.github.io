@@ -1,5 +1,9 @@
 [
     {
-        "name":"Cool Event"
+        "eventName":"KLE Batttlegames and Company Battle",
+        "startDate": "May 31 2025 12:00pm",
+        "endDate": "May 31 2025 4:00pm",
+        "about": "Come on out and have some fun at an NL KLE!",
+        "location": "<a href='https://maps.app.goo.gl/T7dHyUJcQNBYBZ119' target='_blank'> 6046 West Lake Sammamish Pkwy NE, Redmond, WA, 98052</a>"
     }
 ]
