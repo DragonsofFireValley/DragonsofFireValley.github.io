@@ -1,9 +1,37 @@
 [
-    {
-        "eventName":"KLE Batttlegames and Company Battle",
-        "startDate": "May 31 2025 12:00pm",
-        "endDate": "May 31 2025 4:00pm",
-        "about": "Come on out and have some fun at an NL KLE!",
-        "location": "<a href='https://maps.app.goo.gl/T7dHyUJcQNBYBZ119' target='_blank'> 6046 West Lake Sammamish Pkwy NE, Redmond, WA, 98052</a>"
-    }
+	{
+		"eventName":"KLE Batttlegames and Company Battle",
+		"startDate": "May 31 2025 12:00pm",
+		"endDate": "May 31 2025 4:00pm",
+		"about": "Come on out and have some fun at an NL KLE!",
+		"location": "<a href='https://maps.app.goo.gl/UJM8TEsEjxn9zCcw5' target='_blank'> 6046 West Lake Sammamish Pkwy NE, Redmond, WA, 98052</a>"
+	},
+	{
+		"eventName":"Northern Lights Midreign",
+		"startDate": "June 13 2025 12:00pm",
+		"endDate": "Jun 15 2025 11:00am",
+		"about": "Changing of the positions of Prime Minister and GMR! Go camping with many others for this special occasion (:",
+		"location": "<a href='https://maps.app.goo.gl/imAPJScrjL8fmvDH6' target='_blank'>370 W Panhandle Lake Rd, Shelton, WA 98584</a>"
+	},
+	{
+		"eventName":"Dragons of Fire valley 18th Anniversery",
+		"startDate": "June 21 2025 12:00pm",
+		"endDate": "June 21 2025 5:00pm",
+		"about": "Come out to Dragons of Fire valley to celebrate the land turning 18 (:",
+		"location": "<a href='https://maps.app.goo.gl/6b1XZqd4gN3tYjh1A' target='_blank'>Fort Borst Park, Centralia, WA 98531</a>"
+	},
+	{
+		"eventName":"Warskill & Crown Laureate Trials",
+		"startDate": "August 16 2025",
+		"endDate": "",
+		"about": "Come out for the Warskill tournament and Crown Laureate Trials (:",
+		"location": "<a href='https://maps.app.goo.gl/UJM8TEsEjxn9zCcw5' target='_blank'> 6046 West Lake Sammamish Pkwy NE, Redmond, WA, 98052</a>"
+	},
+	{
+		"eventName":"Northern Lights Coronation Campout",
+		"startDate": "September 11 2025 12:00pm",
+		"endDate": "September 14 2025 11:00am",
+		"about": "Changing of the positions of Monarch, Regent, and Champion! Go camping with many others for this special occasion (:",
+		"location": "<a href='https://maps.app.goo.gl/imAPJScrjL8fmvDH6' target='_blank'>370 W Panhandle Lake Rd, Shelton, WA 98584</a>"
+	}
 ]
